@@ -1,19 +1,18 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>JSP Login page</title>
 </head>
 <body>
-<form action="LoginServlet" method="post">
-Enter the username<input type="text" name="user"><br>
-Enter the password<input type="text" name="pass"><br>
-<input type="submit" value="Login"><br>
-<a href="signup.jsp">No Account?Click here</a>
 
+<form action="/myapp/login" method="post">
+
+    Login: <input type="text" name="loginParam"/>
+    Password: <input type="password" name="passwd"/>
+    <input type="submit" value="submit"/>
 
 </form>
+
 </body>
 </html>
